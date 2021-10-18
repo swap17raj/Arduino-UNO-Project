@@ -1,0 +1,31 @@
+WORKING PROGRAM
+
+int PIR=7;
+int m1=8;
+int m2=9;
+int state1=0;
+
+Void setup()
+{
+Pinmode(PIR,INPUT);
+Pinmode(m1,OUTPUT);
+Pinmode(m2,OUTPUT);
+}
+
+Void loop()
+{
+int state1=digitalRead(PIR);
+If(state1==high){
+Digitalwrite(m1,high);
+Digitalwrite(m2,low);
+Delay(2500);
+Digitalwrite(m1.low);
+Digitalwrite(m2,high);
+Delay(2500);
+}
+Else
+{
+Digitalwrite(m1,low);
+Digitalwrite(m2,high);
+}
+}
